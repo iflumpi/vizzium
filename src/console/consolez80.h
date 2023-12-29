@@ -37,7 +37,6 @@ protected:
     void process_normal_mode(int ch);
     void process_command(const command_tokens& tokens);
     void update_cpu_panel();
-    bool load_binary(const char* filename);
     void display_memory(uint16_t address);
 
 protected: // tui commands

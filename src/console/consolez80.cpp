@@ -166,15 +166,6 @@ void ConsoleZ80::process_command(const command_tokens& tokens)
     curs_set(0);
 }
 
-/**
- * Load binary data from a file to CPU memory
- */
-bool ConsoleZ80::load_binary(const char* filename)
-{
-
-    return true;
-}
-
 //-------------------------------------------------------------------------
 // TUI commands implementation
 //-------------------------------------------------------------------------
