@@ -1,0 +1,3 @@
+[submodule "lib/emuzeta80"]
+	path = lib/emuzeta80
+	url = https://codeberg.org/iflumpi/emuzeta80
