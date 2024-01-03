@@ -33,7 +33,7 @@ public:
 protected:
     virtual void initialize_layouts();
     virtual void process_normal_mode(int ch);
-    virtual void process_command_mode(int ch, int* cursor_command);
+    virtual void process_command_mode(int ch, unsigned int* cursor_command);
     virtual void process_command(const command_tokens& tokens);
     void clear_command_window();
     void print_error(const std::string& message);

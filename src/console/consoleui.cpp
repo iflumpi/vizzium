@@ -55,7 +55,7 @@ int ConsoleUI::execute()
     initialize_layouts();
 
     int ch;
-    int cursor_command = -1;
+    unsigned int cursor_command = 0;
 
     while (!end)
     {
@@ -101,7 +101,7 @@ void ConsoleUI::process_normal_mode(int ch)
 /**
  * Processes input in command mode for the tui
  */
-void ConsoleUI::process_command_mode(int ch, int* cursor_command)
+void ConsoleUI::process_command_mode(int ch, unsigned int* cursor_command)
 {
     switch (ch)
     {

@@ -249,7 +249,7 @@ void ConsoleZ80::load_binary(const command_tokens& tokens)
     char buffer[4];
     size_t bytesRead;
     uint16_t pos = 0;
-    while (bytesRead = fread(buffer, sizeof(char), 1, file))
+    while ((bytesRead = fread(buffer, sizeof(char), 1, file)))
     {
         auto value = buffer[0];
         cpu->write(value, pos++);
